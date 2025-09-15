@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
 
-        ArrayList<cuenbancaria> listCuentas = new ArrayList<>()
+        ArrayList<cuenbancaria> listCuentas = new ArrayList<>();
 
 
         int opc;
@@ -22,6 +22,7 @@ public class Main {
             opc = teclado.nextInt();
 
             switch (opc) {
+
                 case 1:
                     cuenbancaria est1 = new cuenbancaria();
 
