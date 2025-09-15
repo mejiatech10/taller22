@@ -7,7 +7,7 @@ public class cuenbancaria {
     public cuenbancaria() {
     }
 
-    public cuenbancaria(String numecuenta, String dni, Double saldo) {
+    public cuenbancaria(String numecuenta, String dni, double saldo) {
         this.numecuenta = numecuenta;
         this.dni = dni;
         this.saldo = saldo;
@@ -51,6 +51,8 @@ public class cuenbancaria {
 
         if(this.saldo<retirar){
           this.saldo=0;
+        }else {
+            this.saldo-= retirar;
 
         }
         return this.saldo-=retirar;
@@ -58,7 +60,7 @@ public class cuenbancaria {
     }
     public double extraccionrapida (){
         double saldo1 ;
-        saldo1 = saldo * 0,20;
+        saldo1 = saldo * 0.20;
 
         if(saldo < saldo1 ){
             System.out.println("saldo insuficiente ");
@@ -74,6 +76,6 @@ public class cuenbancaria {
     }
     public double consultardatos(){
 
-        return;
+        return toString();
     }
 }
